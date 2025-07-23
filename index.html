@@ -17,7 +17,7 @@
       --success-color: #4cc9f0;
       --warning-color: #f72585;
     }
-    
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -25,14 +25,14 @@
       font-family: "line_seed_sans_th", sans-serif;
       font-weight: bold;
     }
-    
+
     body {
       background-color: #f5f7fa;
       color: var(--dark-color);
       line-height: 1.6;
       padding: 20px;
     }
-    
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -42,7 +42,7 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       border-top: 5px solid var(--primary-color);
     }
-    
+
     h1 {
       text-align: center;
       color: var(--primary-color);
@@ -51,7 +51,7 @@
       position: relative;
       padding-bottom: 15px;
     }
-    
+
     h1::after {
       content: '';
       position: absolute;
@@ -63,7 +63,7 @@
       background: linear-gradient(to right, var(--primary-color), var(--accent-color));
       border-radius: 2px;
     }
-    
+
     .calendar-header {
       display: flex;
       justify-content: space-between;
@@ -75,12 +75,12 @@
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
     }
-    
+
     .month-year {
       font-size: 1.5rem;
       font-weight: bold;
     }
-    
+
     .nav-buttons button {
       background: rgba(255, 255, 255, 0.2);
       border: none;
@@ -92,11 +92,11 @@
       margin: 0 5px;
       transition: all 0.3s ease;
     }
-    
+
     .nav-buttons button:hover {
       background: rgba(255, 255, 255, 0.3);
     }
-    
+
     .weekdays {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -106,17 +106,17 @@
       font-weight: bold;
       color: var(--primary-color);
     }
-    
+
     .weekday {
       padding: 10px;
     }
-    
+
     .days {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       gap: 8px;
     }
-    
+
     .day {
       position: relative;
       min-height: 100px;
@@ -128,29 +128,29 @@
       cursor: pointer;
       border: 1px solid #e9ecef;
     }
-    
+
     .day:hover {
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       border-color: var(--accent-color);
     }
-    
+
     .day-number {
       font-weight: bold;
       margin-bottom: 5px;
       color: var(--dark-color);
     }
-    
+
     .day.today {
       background-color: #e3f2fd;
       border: 2px solid var(--accent-color);
     }
-    
+
     .day.visit-day {
       position: relative;
       overflow: hidden;
     }
-    
+
     .event-bar {
       position: absolute;
       top: 0;
@@ -160,7 +160,7 @@
       background-color: var(--warning-color);
       border-radius: 2px 2px 0 0;
     }
-    
+
     .day.visit-day .total-visitors {
       position: absolute;
       top: 5px;
@@ -171,13 +171,13 @@
       padding: 2px 5px;
       border-radius: 10px;
     }
-    
+
     .day.other-month {
       color: #adb5bd;
       background-color: #f8f9fa;
     }
-    
-    #visitForm, #loginForm {
+
+    #visitForm {
       margin: 30px auto;
       padding: 25px;
       background: white;
@@ -187,25 +187,25 @@
       display: none;
       border-top: 5px solid var(--primary-color);
     }
-    
-    #visitForm h2, #loginForm h2 {
+
+    #visitForm h2 {
       color: var(--primary-color);
       margin-bottom: 20px;
       text-align: center;
       font-size: 1.8rem;
     }
-    
+
     .form-group {
       margin-bottom: 20px;
     }
-    
+
     .form-group label {
       display: block;
       margin-bottom: 8px;
       font-weight: 600;
       color: var(--dark-color);
     }
-    
+
     .form-control {
       width: 100%;
       padding: 12px 15px;
@@ -214,13 +214,13 @@
       font-size: 1rem;
       transition: border-color 0.3s;
     }
-    
+
     .form-control:focus {
       outline: none;
       border-color: var(--accent-color);
       box-shadow: 0 0 0 3px rgba(72, 149, 239, 0.2);
     }
-    
+
     .btn {
       display: inline-block;
       padding: 12px 25px;
@@ -234,30 +234,30 @@
       transition: all 0.3s ease;
       text-align: center;
     }
-    
+
     .btn:hover {
       background-color: var(--secondary-color);
       transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
     }
-    
+
     .btn-block {
       display: block;
       width: 100%;
     }
-    
-    #errorMsg, #loginError {
+
+    #errorMsg {
       color: var(--warning-color);
       margin-top: 15px;
       text-align: center;
       font-size: 0.9rem;
     }
-    
+
     .visit-details {
       margin-top: 5px;
       font-size: 0.8rem;
     }
-    
+
     .visit-item {
       display: flex;
       justify-content: space-between;
@@ -266,18 +266,18 @@
       background-color: rgba(255, 255, 255, 0.7);
       border-radius: 3px;
     }
-    
+
     .visit-name {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    
+
     .visit-count {
       font-weight: bold;
       color: var(--warning-color);
     }
-    
+
     .visit-details {
       max-height: 60px;
       overflow-y: auto;
@@ -287,16 +287,16 @@
       padding-right: 2px;
       font-size: 0.8rem;
     }
-    
+
     .visit-details::-webkit-scrollbar {
       width: 3px;
     }
-    
+
     .visit-details::-webkit-scrollbar-thumb {
       background-color: var(--accent-color);
       border-radius: 3px;
     }
-    
+
     .visit-count-mobile {
       position: absolute;
       bottom: 2px;
@@ -307,7 +307,7 @@
       padding: 1px 4px;
       border-radius: 10px;
     }
-    
+
     .thumbnail {
       width: 40px;
       height: 40px;
@@ -316,7 +316,7 @@
       cursor: pointer;
       margin: 2px;
     }
-    
+
     .full-image-overlay {
       position: fixed;
       top: 0;
@@ -329,13 +329,13 @@
       align-items: center;
       z-index: 1000;
     }
-    
+
     .full-image {
       max-width: 90%;
       max-height: 90%;
       object-fit: contain;
     }
-    
+
     .close-button {
       position: absolute;
       top: 20px;
@@ -344,7 +344,7 @@
       font-size: 24px;
       cursor: pointer;
     }
-    
+
     /* Loading Animation */
     .loading-overlay {
       position: fixed;
@@ -361,7 +361,7 @@
       color: white;
       display: none;
     }
-    
+
     .loader {
       width: 60px;
       height: 60px;
@@ -371,77 +371,111 @@
       animation: spin 1s linear infinite;
       margin-bottom: 20px;
     }
-    
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    
+
     .loading-text {
       font-size: 1.2rem;
       font-weight: bold;
       letter-spacing: 1px;
       animation: pulse 1.5s infinite;
     }
-    
+
     @keyframes pulse {
       0% { opacity: 1; }
       50% { opacity: 0.5; }
       100% { opacity: 1; }
     }
-    
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      border-top: 5px solid var(--primary-color);
+    }
+
+    .close-modal {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close-modal:hover {
+      color: var(--warning-color);
+    }
+
     /* Mobile Styles */
     @media (max-width: 600px) {
       .container {
         padding: 15px;
       }
-      
+
       h1 {
         font-size: 1.6rem;
       }
-      
+
       .day {
         min-height: 60px;
         padding: 3px;
         font-size: 0.8rem;
       }
-      
+
       .day-number {
         font-size: 0.7rem;
         margin-bottom: 2px;
       }
-      
+
       .visit-details {
         display: none;
       }
-      
+
       .weekday {
         font-size: 0.7rem;
         padding: 5px 2px;
       }
-      
+
       .month-year {
         font-size: 1.1rem;
       }
-      
+
       .nav-buttons button {
         padding: 5px 8px;
         font-size: 0.8rem;
       }
-      
-      #visitForm, #loginForm {
+
+      #visitForm {
         padding: 15px;
         margin: 15px auto;
       }
-      
+
       .form-control {
         padding: 10px 12px;
       }
-      
+
       .btn {
         padding: 10px 15px;
       }
-      
+
       /* Horizontal Scroll for Records */
       .records-container {
         display: flex;
@@ -451,7 +485,7 @@
         scrollbar-width: thin;
         scrollbar-color: var(--accent-color) rgba(0,0,0,0.1);
       }
-      
+
       .record-card {
         flex: 0 0 auto;
         width: 250px;
@@ -461,7 +495,7 @@
         padding: 10px;
         position: relative;
       }
-      
+
       .record-card img {
         width: 100%;
         height: 80px;
@@ -470,13 +504,13 @@
         margin-bottom: 10px;
         cursor: pointer;
       }
-      
+
       .record-actions {
         display: flex;
         gap: 5px;
         margin-top: 10px;
       }
-      
+
       .record-actions button {
         flex: 1;
         padding: 5px;
@@ -486,46 +520,52 @@
         font-size: 0.8rem;
         color: white;
       }
-      
+
       .btn-edit {
         background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
       }
-      
+
       .btn-delete {
         background: linear-gradient(135deg, #f44336 0%, #c62828 100%);
       }
+
+      /* Modal mobile styles */
+      .modal-content {
+        margin: 20% auto;
+        width: 90%;
+      }
     }
-    
+
     @media (min-width: 601px) and (max-width: 900px) {
       .day {
         min-height: 80px;
         padding: 5px;
       }
-      
+
       .visit-item {
         flex-direction: column;
       }
-      
+
       .visit-name {
         white-space: normal;
         font-size: 0.7rem;
         margin-bottom: 2px;
       }
-      
+
       .visit-count {
         font-size: 0.7rem;
       }
     }
-    
+
     .btn-delete, .btn-edit {
       transition: all 0.2s ease;
     }
-    
+
     .btn-delete:hover, .btn-edit:hover {
       transform: translateY(-1px);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
-    
+
     .btn-delete:active, .btn-edit:active {
       transform: translateY(0);
     }
@@ -540,7 +580,7 @@
 
   <div id="containerot" class="container">
     <h1>ปฏิทินลูกค้า</h1>
-    
+
     <div class="calendar-header">
       <div class="month-year" id="monthYear">มกราคม 2023</div>
       <div class="nav-buttons">
@@ -549,7 +589,7 @@
         <button id="nextMonth">></button>
       </div>
     </div>
-    
+
     <div class="weekdays">
       <div class="weekday">อา</div>
       <div class="weekday">จ</div>
@@ -559,46 +599,31 @@
       <div class="weekday">ศ</div>
       <div class="weekday">ส</div>
     </div>
-    
+
     <div class="days" id="calendar"></div>
-    
-    <div id="loginForm" class="container" style="max-width: 400px; display: none;">
-      <h2 class="text-center text-2xl font-bold mb-6" style="color: var(--primary-color);">เข้าสู่ระบบ</h2>
-      <div class="form-group">
-        <label for="email">อีเมล</label>
-        <input type="email" id="email" class="form-control" placeholder="กรอกอีเมล" required>
-      </div>
-      <div class="form-group">
-        <label for="password">รหัสผ่าน</label>
-        <input type="password" id="password" class="form-control" placeholder="กรอกรหัสผ่าน" required>
-      </div>
-      <button id="loginBtn" class="btn btn-block">เข้าสู่ระบบ</button>
-      <button id="logoutBtn" class="btn btn-block" style="background-color: var(--warning-color);">ออกจากระบบ</button>
-      <p id="loginError" class="text-center text-red-500 mt-4"></p>
-    </div>
-    
+
     <div id="visitForm">
       <h2 id="formTitle">บันทึกการมาเยี่ยมชม</h2>
       <div class="form-group">
         <label for="companyName">ชื่อบริษัท</label>
         <input type="text" id="companyName" class="form-control" placeholder="กรอกชื่อบริษัท" required>
       </div>
-      
+
       <div class="form-group">
         <label for="visitDate">วันที่เยี่ยมชม</label>
         <input type="date" id="visitDate" class="form-control" disabled>
       </div>
-      
+
       <div class="form-group">
         <label for="endDate">ถึงวันที่</label>
         <input type="date" id="endDate" class="form-control" required>
       </div>
-      
+
       <div class="form-group">
         <label for="customerCount">จำนวนลูกค้าที่เข้าเยี่ยมชม</label>
         <input type="number" id="customerCount" class="form-control" placeholder="กรอกจำนวนลูกค้า" required>
       </div>
-      
+
       <div class="form-group">
         <label for="branch">สาขา</label>
         <select id="branch" class="form-control" required>
@@ -609,37 +634,58 @@
           <option value="Gofield">Gofield</option>
         </select>
       </div>
-      
+
       <div class="form-group">
         <label for="photoLink">ลิงก์รูปภาพ</label>
         <input type="url" id="photoLink" class="form-control" placeholder="เพิ่มลิงก์รูปภาพ">
       </div>
-      
+
       <div class="form-group">
         <label for="notes">อื่นๆ</label>
         <input type="text" id="notes" class="form-control" placeholder="เพิ่มรายละเอียด">
       </div>
-      
+
       <div class="form-group">
         <label for="recorder">ผู้บันทึกข้อมูล</label>
         <input type="text" id="recorder" class="form-control" placeholder="กรอกชื่อผู้บันทึก" required>
       </div>
-      
+
       <button id="saveBtn" class="btn btn-block">บันทึกข้อมูล</button>
       <p id="errorMsg"></p>
     </div>
-    
+
     <div class="full-image-overlay" id="fullImageOverlay">
       <span class="close-button" id="closeImage">×</span>
       <img class="full-image" id="fullImage" src="">
     </div>
-    
-    <hr><br>
+
+    <br><hr><br>
     <center><div class="footer">
       <h6 class="text-lg font-semibold" style="font-size: 12px;color:#4361ee;">
         <i class="far fa-copyright"></i> 2025 จัดทำโดย นายภาคภูมิ เรือนมูล
       </h6>
     </div></center>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="loginForm">
+        <h2 class="text-center text-2xl font-bold mb-6" style="color: var(--primary-color);">เข้าสู่ระบบ</h2>
+        <div class="form-group">
+          <label for="email">อีเมล</label>
+          <input type="email" id="email" class="form-control" placeholder="กรอกอีเมล" required>
+        </div>
+        <div class="form-group">
+          <label for="password">รหัสผ่าน</label>
+          <input type="password" id="password" class="form-control" placeholder="กรอกรหัสผ่าน" required>
+        </div>
+        <button id="loginBtn" class="btn btn-block">เข้าสู่ระบบ</button>
+        <button id="logoutBtn" class="btn btn-block" style="background-color: var(--warning-color); display: none;">ออกจากระบบ</button>
+        <p id="loginError" class="text-center text-red-500 mt-4"></p>
+      </div>
+    </div>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
@@ -661,8 +707,6 @@
     const nextMonthBtn = document.getElementById('nextMonth');
     const todayBtn = document.getElementById('today');
     const visitFormEl = document.getElementById('visitForm');
-    const loginFormEl = document.getElementById('loginForm');
-    const saveBtn = document.getElementById('saveBtn');
     const loginBtn = document.getElementById('loginBtn');
     const logoutBtn = document.getElementById('logoutBtn');
     const loginErrorEl = document.getElementById('loginError');
@@ -672,6 +716,8 @@
     const closeImage = document.getElementById('closeImage');
     const loadingOverlay = document.getElementById('loadingOverlay');
     const formTitle = document.getElementById('formTitle');
+    const loginModal = document.getElementById('loginModal');
+    const closeModalBtn = document.querySelector('.close-modal');
 
     // Initialize Firebase
     const firebaseConfig = {
@@ -689,16 +735,24 @@
     const database = firebase.database();
     const auth = firebase.auth();
 
+    // ฟังก์ชันเปิด/ปิดโมดอล
+    function openLoginModal() {
+      loginModal.style.display = 'block';
+    }
+
+    function closeLoginModal() {
+      loginModal.style.display = 'none';
+    }
+
     // Check authentication state
     auth.onAuthStateChanged(user => {
       currentUser = user;
       if (user) {
-        loginFormEl.style.display = 'none';
+        closeLoginModal();
         logoutBtn.style.display = 'block';
         containerEl.classList.remove('hidden');
         fetchVisitRecords();
       } else {
-        loginFormEl.style.display = 'block';
         logoutBtn.style.display = 'none';
         containerEl.classList.remove('hidden');
         fetchVisitRecords();
@@ -802,6 +856,14 @@
 
       closeImage.addEventListener('click', () => {
         fullImageOverlay.style.display = 'none';
+      });
+
+      // Modal event listeners
+      closeModalBtn.addEventListener('click', closeLoginModal);
+      window.addEventListener('click', (e) => {
+        if (e.target === loginModal) {
+          closeLoginModal();
+        }
       });
     }
 
@@ -1029,8 +1091,7 @@
               formTitle.textContent = 'บันทึกการมาเยี่ยมชม';
               setTimeout(() => showVisitForm(dateStr), 300);
             } else {
-              loginFormEl.style.display = 'block';
-              loginFormEl.scrollIntoView({ behavior: 'smooth' });
+              openLoginModal();
               Swal.fire('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบเพื่อบันทึกข้อมูล', 'warning');
             }
           });
@@ -1072,8 +1133,7 @@
     async function deleteRecord(recordKey, dateStr) {
       if (!currentUser) {
         Swal.fire('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบเพื่อลบข้อมูล', 'warning');
-        loginFormEl.style.display = 'block';
-        loginFormEl.scrollIntoView({ behavior: 'smooth' });
+        openLoginModal();
         return;
       }
 
@@ -1113,8 +1173,7 @@
     function showVisitForm(dateStr, existingRecord = null) {
       if (!currentUser) {
         Swal.fire('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบเพื่อบันทึกข้อมูล', 'warning');
-        loginFormEl.style.display = 'block';
-        loginFormEl.scrollIntoView({ behavior: 'smooth' });
+        openLoginModal();
         return;
       }
 
@@ -1151,19 +1210,10 @@
       return monthNames[monthIndex];
     }
 
-    // async function saveVisit() {
-    //   if (!currentUser) {
-    //     Swal.fire('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบเพื่อบันทึกข้อมูล', 'warning');
-    //     loginFormEl.style.display = 'block';
-    //     login FishingFormEl.scrollIntoView({ behavior: 'smooth' });
-    //     return;
-    //   }
-
-         async function saveVisit() {
+    async function saveVisit() {
       if (!currentUser) {
-        Swal.fire('กรุณาเข้า สู่ระบบ', 'คุณต้องเข้าสู่ระบบเพื่อบันทึกข้อมูล', 'warning');
-        loginFormEl.style.display = 'block';
-        loginFormEl.scrollIntoView({ behavior: 'smooth' });
+        Swal.fire('กรุณาเข้าสู่ระบบ', 'คุณต้องเข้าสู่ระบบเพื่อบันทึกข้อมูล', 'warning');
+        openLoginModal();
         return;
       }
 
